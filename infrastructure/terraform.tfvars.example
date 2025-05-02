@@ -1,0 +1,31 @@
+# Copy this file to terraform.tfvars and fill in your values
+aws_region          = "us-east-1"
+environment         = "dev"
+project_name        = "ai-agent"
+lambda_function_name = "ai-agent-api"
+lambda_memory_size  = 1024
+lambda_timeout      = 30
+
+# Security-sensitive values - replace with your actual values
+openai_api_key      = "sk-proj-xxxxxxxx"  # Replace with your OpenAI API key
+function_api_token  = "your-secure-api-token"  # Replace with a strong, unique authentication token
+
+# ChromaDB configuration
+chroma_host             = "your-chromadb-ip-or-hostname"  # Replace with your ChromaDB host
+chroma_port             = 8000
+chroma_collection_name  = "knowledge"
+
+# Model configuration
+openai_model_name            = "o3-mini"
+openai_embedding_model_name  = "text-embedding-3-small"
+verbose                      = "false" # Set to "true" for detailed agent logs
+
+# VPC configuration (if needed)
+vpc_id              = ""  # Leave empty if not using VPC
+subnet_ids          = []  # Leave empty if not using VPC
+
+# CORS configuration
+cors_allow_origins  = ["https://your-frontend-domain.com"]
+
+# Lambda Layer ARN with dependencies
+lambda_layer_arn    = "arn:aws:lambda:us-east-1:123456789012:layer:ai-agent-dependencies:1"

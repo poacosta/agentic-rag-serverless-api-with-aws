@@ -1,0 +1,12 @@
+[project]
+name = "local"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb==1.0.7",
+    "dotenv==0.9.9",
+    "flask==3.1.0",
+    "llama-index==0.12.33",
+    "llama-index-vector-stores-chroma==0.4.1",
+]
