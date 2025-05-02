@@ -99,8 +99,8 @@ aws lambda publish-layer-version \
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/ai-agent-lambda.git
-   cd ai-agent-lambda
+   git clone https://github.com/poacosta/agentic-rag-serverless-api-with-aws.git
+   cd agentic-rag-serverless-api-with-aws
    ```
 
 2. Create your terraform variables file:
